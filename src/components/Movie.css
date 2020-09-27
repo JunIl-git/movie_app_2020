@@ -10,7 +10,7 @@
 }
 
 .movies .movie {
-    width: 45%;
+    width: 100%;
     background-color: white;
     margin-bottom: 70px;
     display: flex;
@@ -23,6 +23,13 @@
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
     transition: all .5s;
 }
+
+.movies > a {
+    width: 45%;
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .movies .movie:hover {
     transform: translateY(-10px);
