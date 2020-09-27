@@ -8,4 +8,4 @@ React JS Fundamentals Course (2020 Update!);
 
 라우터와 라우트를 통한 페이지 이동을 공부했습니다.
 
-https://github.com/JunIl-git/movie_app_2020
+https://junil-git.github.io/movie_app_2020/
