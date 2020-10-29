@@ -10,4 +10,11 @@ React JS Fundamentals Course (2020 Update!);
 
 https://github.com/JunIl-git/movie_app_2020
 
-End
+
+<h1>React 기초 정리</h1>
+
+<h5>component란?</h5>
+<p>HTML을 반환하는 함수이다.</p>
+
+<h5>JSX란?</h5>
+<p>js의 확장된 문법이다. React의 "element"를 생성한다.<p>
