@@ -48,7 +48,25 @@ const user = fetchUser();       //요청값을 다 받았으면 실행
 console.log(user)               //정상적 결과 출력
 </p>
 
- <h5>PropTypes</h5>
- <p>property들의 type을 체크 해준다.
+ <h5>PropTypes (TypeScript배우면 안써도된다.)</h5>
+ <p>property들의 type을 체크 해준다. 
     download = npm i prop-types
     import PropTypes from "prop-types"</p>
+
+<h5>map을 이용한 데이터 나열</h5>
+<p>
+    this.state.movies.map(movie =>{ 
+                  return <Movie key = {movie.id}
+                                id={movie.id} 
+                                title={movie.title} 
+                                summary={movie.summary} 
+                                year={movie.year} 
+                                poster={movie.medium_cover_image}
+                                genres={movie.genres}
+                                >
+                         </Movie>
+                  }
+                  )
+</p>
+
+<h5></h5>
