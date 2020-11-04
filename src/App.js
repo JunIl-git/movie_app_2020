@@ -1,65 +1,16 @@
-import React from "react";
-import axios from "axios";
-import Movie from "./Movie";
-import './App.css';
+import React from 'react';
+import {HashRouter, Route} from "react-router-dom";
+import About from "./routes/About";
+import Home from "./routes/Home";
 
-class App extends React.Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      isLoading : true,
-      movies : [],
-    }
-  }
-  getMovies = async () => {
-    const Movies = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating");
-    const arrayMovies = Movies.data.data.movies;
-    this.setState({
-      movies : arrayMovies,
-      isLoading : false,
-    })
+function App(){
 
-  }
-  componentDidMount(){
-    this.getMovies();
-  }
-
-  render(){
-    return(
-
-      <section className="container">
-        {this.state.isLoading ? 
-          (
-            <div className="loader">
-              <div className="loader__text">
-                <div className="loadingBox box">
-                  <div className="bar"></div>
-                  <div className="bar"></div>
-                  <div className="bar"></div>
-                  <div className="bar"></div>
-                  <div className="bar"></div>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div className="movies">
-              {this.state.movies.map(movie =>{
-              return <Movie key = {movie.id}
-                            id={movie.id} 
-                            title={movie.title} 
-                            summary={movie.summary} 
-                            year={movie.year} 
-                            poster={movie.medium_cover_image}
-                            genres={movie.genres}
-                            >
-                     </Movie>
-              }
-              )}
-            </div>
-          )
-        }
-      </section>
-    )
-  }
+  return(
+    <HashRouter>
+      <Route path="/" component={Home} exact={true}></Route>
+      <Route path="/About" component={About}></Route>
+    </HashRouter>
+  )
 }
+
 export default App;

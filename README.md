@@ -69,4 +69,6 @@ console.log(user)               //정상적 결과 출력
                   )
 </p>
 
-<h5></h5>
+<h5>react-router-dom</h5>
+<p>download => npm i react-router-dom</p>
+<p>리액트는 원페이지이기때문에 페이지이동을 하려면 라우터를 이용해서 주소를 바꿔야한다.</p>
