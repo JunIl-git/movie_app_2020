@@ -72,3 +72,4 @@ console.log(user)               //정상적 결과 출력
 <h5>react-router-dom</h5>
 <p>download => npm i react-router-dom</p>
 <p>리액트는 원페이지이기때문에 페이지이동을 하려면 라우터를 이용해서 주소를 바꿔야한다.</p>
+<p>속성값 path = 경로설정 component = 해당 컴포넌트 설정 exact = path의 값과의 정확성</p>
