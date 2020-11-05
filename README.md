@@ -52,18 +52,9 @@ console.log(user)               //정상적 결과 출력
 
 <h3>map을 이용한 데이터 나열</h3>
 <p>
+리턴값을 컴포넌트로 주게 되면 배열값들이 하나씩 분배됨
     this.state.movies.map(movie =>{ 
-                  return <Movie key = {movie.id}
-                                id={movie.id} 
-                                title={movie.title} 
-                                summary={movie.summary} 
-                                year={movie.year} 
-                                poster={movie.medium_cover_image}
-                                genres={movie.genres}
-                                >
-                         </Movie>
-                  }
-                  )
+                  return <Movie key = {movie.id} d={movie.id} itle={movie.title} summary={movie.summary} year={movie.year} poster={movie.medium_cover_image} genres={movie.genres}></Movie>})
 </p>
 
 <h3>react-router-dom</h3>
