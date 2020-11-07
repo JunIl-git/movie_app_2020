@@ -61,3 +61,18 @@ console.log(user)               //정상적 결과 출력
 <p>download => npm i react-router-dom</p>
 <p>리액트는 원페이지이기때문에 페이지이동을 하려면 라우터를 이용해서 주소를 바꿔야한다.</p>
 <p>속성값 path = 경로설정 component = 해당 컴포넌트 설정 exact = path의 값과의 정확성</p>
+<p>import {HashRouter, Route} from "react-router-dom" HashRouter는 url에 /#/이 붙는다.</p>
+
+<h3>Link태그 사용법</h3>
+<p>import {Link} from "react-router-dom";</p>
+<p>a태그를 사용하면 강제로 새로고침이 되기 때문에 Link태그를 사용한다. href대신 to</p>
+<p>Link태그를 사용할 때는 router태그 안에 넣어야한다.</p>
+
+<p>★ Link태그는 props를 다른컴포넌트에 보낼수 있다.</p>
+<p><Link to={{
+    pathname : "/movie-detail", //해당경로로 이동
+    state: {                    //해당 컴포넌트로 props 전달
+        year:year, 
+        title: title
+        }
+    }}/></p>
